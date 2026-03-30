@@ -1,6 +1,6 @@
 # Agent Workspace
 
-Agent Workspace is a reusable starter template for running software projects with Codex, OpenCode, and Claude-compatible instruction files.
+Agent Workspace is a reusable starter template for running software projects with Codex, OpenCode, and Claude-compatible instruction files. mostly from [https://github.com/k3nnethfrancis/agent-utils/](https://github.com/k3nnethfrancis/agent-utils/)
 
 It is built around a simple portable model:
 
@@ -53,3 +53,10 @@ This template ignores session dumps and local-only config so the repo can stay p
 - Codex: reads `AGENTS.md`
 - OpenCode: reads `AGENTS.md`
 - Claude: can use `CLAUDE.md`, which should mirror `AGENTS.md`
+
+
+
+
+
+
+
