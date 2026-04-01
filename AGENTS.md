@@ -105,7 +105,7 @@ Four layers of persistent memory, each serving a different purpose:
 | Layer | Location | Purpose | Loaded |
 |---|---|---|---|
 | **Ledger** | `projects/{name}/ledger.md` | Cross-agent handoff and current focus | On demand |
-| **Agent memory** | `~/.claude/projects/.../memory/MEMORY.md` or equivalent | Stable agent-specific facts | Agent-specific |
+| **Agent memory** | Agent-specific memory location (e.g. `~/.claude/...`, `~/.codex/...`, or project-local) | Stable agent-specific facts | Agent-specific |
 | **Session dumps** | `notes/vault/sessions/{id}.md` | Full conversation recovery | On demand |
 | **Vault** | `notes/vault/` | Long-term knowledge, planning, research | On demand |
 
@@ -141,7 +141,7 @@ When starting a new project:
 
 3. Install memory hooks later if needed:
    ```bash
-   # Example Claude-side setup
+   # Claude-only example
    claude plugin add path/to/agent-utils/plugins/agent-memory
    export SESSIONS_DIR=~/path/to/workspace/notes/vault/sessions
    ```
