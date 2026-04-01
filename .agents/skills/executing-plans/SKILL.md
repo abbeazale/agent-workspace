@@ -26,8 +26,9 @@ Load plan, review critically, execute all tasks, report when complete.
 For each task:
 1. Mark as in_progress
 2. Follow each step exactly (plan has bite-sized steps)
-3. Run verifications as specified
-4. Mark as completed
+3. While implementing code changes, follow **coding-standard** (or workspace equivalent) for TS/JS/React/Node conventions unless the plan or user overrides them
+4. Run verifications as specified
+5. Mark as completed
 
 ### Step 3: Complete Development
 
@@ -68,3 +69,6 @@ After all tasks complete and verified:
 - **superpowers:using-git-worktrees** - Ask if this isolated workspace before starting
 - **superpowers:writing-plans** - Creates the plan this skill executes
 - **superpowers:finishing-a-development-branch** - Complete development after all tasks
+
+**Implementation quality (Step 2):**
+- **coding-standard** - Apply while writing or editing code for each task; optional consistency pass before Step 3 if verification does not already cover it
